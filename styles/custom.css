@@ -1,0 +1,199 @@
+.account{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all .3s ease; 
+}  
+.account .menus{
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    /*transform: translateY(+100%);*/
+    background-color:gainsboro;
+    font-size: 16px;
+    transform: translateY(+100%) scaleY(0);
+    transform-origin: top;
+    transition: transform .3s ease;
+    z-index: 99;
+}
+.account .menus a{
+    padding: 10px 15px;
+    display: block;
+    color:black;
+    cursor: pointer;
+    text-decoration: unset;
+    transition: all .3s ease;
+}
+.account .menus a:hover{
+    background-color: darkgrey;
+}
+.account:hover .menus{
+    transform: translateY(+100%) scaleY(1);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 50px 50px 30px 50px;
+    border-radius: 15px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 24px #00000030);
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.login form button{
+    margin-top: 15px;
+    outline: none;
+    border: 2px solid rgb(81, 125, 129);
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: rgb(81, 125, 129);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.login form button:hover{
+    color: white;
+    background-color: rgb(81, 125, 129);
+}
+.login form input{
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid rgb(87, 87, 87);
+    background-color: rgb(231, 231, 231);
+    height: 20px;
+    margin-top: 5px;
+}
+.login form label{
+    font-size: 15px;
+}
+
+.login>a{
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+#content.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.errors{
+    border: 3px solid red;
+    background-color: rgba(255, 148, 148, 0.562);
+    border-radius: 15px;
+    padding: 30px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.adminBtn{
+    text-decoration: none;
+    color: rgb(235, 63, 52);
+    font-weight: bold;
+    padding: 5px 20px;
+    border: 2px solid rgb(235, 63, 52);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .3s ease;
+    background: white;
+}
+.adminBtn:hover{
+    background: rgb(235, 63, 52);
+    color: white;
+}
+.adminBtn.reverse{
+    color: white;
+    background: rgb(235, 63, 52);
+}
+.adminBtn:hover{
+    background: white;
+    color: rgb(235, 63, 52);
+}
+
+.pos-rel{
+    position: relative;
+}
+
+.filter{
+    border: 2px solid rgb(81, 125, 129);
+    color: rgb(81, 125, 129);
+    font-weight: bold;
+    padding: 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    transition: max-width .5s ease;
+}
+.filter.closed{
+    max-width: 115px;
+}
+.filter>span{
+    padding: 10px 15px;
+    display: block;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.filter:not(.closed)>span{
+    background-color: rgb(81, 125, 129);
+    color: white;
+}
+.filter .filterContainer{
+    max-height: 0;
+    border: none;
+    opacity: 0;
+    transition: max-height .5s ease, opacity .5s ease;
+}
+.filter .filterContainer.open{
+    border-top: 2px solid rgb(81, 125, 129);
+    max-height: 100vh;
+    opacity: 1;
+}
+.filter .filterAll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.filterContainer span{
+    padding: 10px 20px 10px 10px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background: rgb(81, 125, 129, 0.15);
+}
+.filterContainer span input:checked+label{
+    color: red;
+}
+.filterContainer label{
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#filterBtn{
+    color: rgb(81, 125, 129);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px 15px 15px 15px;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule details/(.*) /details.php
+RewriteRule details/(.*)/ /details.php
+RewriteRule account/login/ /account/login.php
+RewriteRule account/login /account/login.php
+RewriteRule account/register/ /account/register.php
+RewriteRule account/register /account/register.php
+RewriteRule account/logout/ /account/logout.php
+RewriteRule account/logout /account/logout.php
+RewriteRule admin/edit/(.*) /admin/edit.php
+RewriteRule admin/edit/(.*)/ /admin/edit.php
+RewriteRule admin/deletecard/(.*) /api/admin/deleteCard.php
+RewriteRule admin/deletecard/(.*)/ /api/admin/deleteCard.php
+RewriteRule admin/create/ /admin/create.php
+RewriteRule admin/create /admin/create.php

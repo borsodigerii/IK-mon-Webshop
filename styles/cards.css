@@ -1,0 +1,100 @@
+#card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    gap: 5px;
+}
+
+.pokemon-card {
+    border-radius: 8px;
+    box-shadow: 1px 15px 23px -11px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 15px 23px -11px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 15px 23px -11px rgba(0,0,0,0.5);
+    margin-top: 20px;
+    text-align: center;
+    width: 220px;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.pokemon-card.purchased{
+    opacity: 0;
+}
+.pokemon-card .image {
+    border-radius: 8px 8px 0 0;
+}
+
+.pokemon-card img {
+    height: auto;
+    max-width: 80%;
+}
+
+.pokemon-card .details {
+    padding: 10px;
+}
+
+.pokemon-card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.pokemon-card h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.pokemon-card h2 a:hover {
+    color: var(--clr-highlight);
+}
+
+.card-type {
+    display: block;
+    color: var(--clr-secondary);
+    font-style: italic;
+    margin: 3px;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-hp,
+.card-attack,
+.card-defense,
+.card-price {
+    font-weight: bold;
+}
+
+.pokemon-card .buy {
+    background-color: var(--clr-main);
+    border-radius: 0 0 8px 8px;
+    color: var(--clr-white);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.pokemon-card .buy:hover {
+    background-color: var(--clr-highlight);
+    margin-top: -5px;
+    padding-bottom: 15px;
+}
+
+.pokemon-card .adminbuy {
+    background-color: var(--clr-main);
+    border-radius: 0 0 8px 8px;
+    color: var(--clr-white);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.pokemon-card .adminbuy:hover {
+    background-color: var(--clr-highlight);
+    margin-top: -5px;
+    padding-bottom: 15px;
+}

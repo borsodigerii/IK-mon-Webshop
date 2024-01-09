@@ -1,0 +1,146 @@
+:root {
+    --clr-main: #517d81;
+    --clr-secondary: #7a8174;
+    --clr-highlight: #008C95;
+    --clr-light: #d3d8de;
+    --clr-dark: #1d2530;
+    --clr-white: #f0f0f0;
+
+    --poke-clr-normal: linear-gradient(#c5c5a1, #a4a484);
+    --poke-clr-fire: linear-gradient(#e96933, #d05e2e);
+    --poke-clr-water: linear-gradient(#6188a1, #54778c);
+    --poke-clr-electric: linear-gradient(#f5f583, #d7d773);
+    --poke-clr-grass: linear-gradient(#87cf87, #76b376);
+    --poke-clr-ice: linear-gradient(#7ce1e1, #6ec9c9);
+    --poke-clr-fighting: linear-gradient(#db93db, #bf81bf);
+    --poke-clr-poison: linear-gradient(#844784, #6a396a);
+    --poke-clr-ground: linear-gradient(#776043, #5d4b35);
+    --poke-clr-psychic: linear-gradient(#c04f8b, #a74479);
+    --poke-clr-bug: linear-gradient(#c19748, #ab8540);
+    --poke-clr-rock: linear-gradient(#9e4646, #883c3c);
+    --poke-clr-ghost: linear-gradient(#57576d, #3e3e4e);
+    --poke-clr-dark: linear-gradient(#1f1f1f, #000000);
+    --poke-clr-steel: linear-gradient(#c5c5c5, #a2a2a2);
+}
+
+.clr-normal { background-image: var(--poke-clr-normal); }
+.clr-fire { background-image: var(--poke-clr-fire); }
+.clr-water { background-image: var(--poke-clr-water); }
+.clr-electric { background-image: var(--poke-clr-electric); }
+.clr-grass { background-image: var(--poke-clr-grass); }
+.clr-ice { background-image: var(--poke-clr-ice); }
+.clr-fighting { background-image: var(--poke-clr-fighting); }
+.clr-poison { background-image: var(--poke-clr-poison); }
+.clr-ground { background-image: var(--poke-clr-ground); }
+.clr-psychic { background-image: var(--poke-clr-psychic); }
+.clr-bug { background-image: var(--poke-clr-bug); }
+.clr-rock { background-image: var(--poke-clr-rock); }
+.clr-ghost { background-image: var(--poke-clr-ghost); }
+.clr-dark { background-image: var(--poke-clr-dark); }
+.clr-steel { background-image: var(--poke-clr-steel); }
+
+body {
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 90%;
+    min-height: 80vh;
+    padding: 10px
+}
+
+@media (min-width: 850px) and (max-width: 1500px) {
+    #content {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1501px) {
+    #content {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+
+.icon {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", sans-serif;
+}
+
+h1 {
+    color: var(--clr-white);
+}
+
+h2, h3 {
+    color: var(--clr-main);
+}
+
+header {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    padding: 10px;
+}
+
+header h1 a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* alerts */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+  }
+  
+  .alert.success {background-color: #04AA6D;}
+  .alert.info {background-color: #2196F3;}
+  .alert.warning {background-color: #ff9800;}
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+.alerts{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+}
