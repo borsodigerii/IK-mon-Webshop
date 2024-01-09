@@ -4,6 +4,7 @@
 
 This is a class assignment of mine, written in PHP/HTML/CSS/JS-AJAX. The assignment is about creating a card trading webapp/webshop, where an administrator account can create pokemon cards, and ordenariy users can purchase it/sell it to admins.
 
+**--------------------------------------------------------------------------------------
 
 Borsodi Gergő
 <NEPTUN-CODE>
