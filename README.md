@@ -4,6 +4,12 @@
 
 This is a class assignment of mine, written in PHP/HTML/CSS/JS-AJAX. The assignment is about creating a card trading webapp/webshop, where an administrator account can create pokemon cards, and ordenariy users can purchase it/sell it to admins.
 
+You can also use it on your local machine: just download the repo, open a terminal in the folder (make sure php 8.0+ is installed on your machine); and type
+`php -S localhost:3000 htaccess-router.php`
+**(Since the app uses a local router, because the php builtin sever cannot process .htaccess files)**
+
+Now your webshop will be available at `http://localhost:3000`
+
 **--------------------------------------------------------------------------------------**
 
 Borsodi Gergő
@@ -34,7 +40,7 @@ ELTE Hallgatói Követelményrendszer, IK kari különös rész, 377/A. §: "Az 
 [x] `0.5 pont` Bejelentkezés: Sikeres bejelentkezés
 [x] `0.5 pont` Kijelentkezés
 [x] `0.5 pont` Főoldal: Megjelenik a felhasználó neve és pénze
-[x] `0.5 pont` Főoldal: A felhasználónévre kattintva a felhasználó részletei oldalra jutunk (EDIT: legördülő menü)
+N[x] `0.5 pont` Főoldal: A felhasználónévre kattintva a felhasználó részletei oldalra jutunk (EDIT: legördülő menü)
 [x] `1.0 pont` Főoldal: Lehessen a kártyákat típus szerint szűrni.
 [x] `0.5 pont` Felhasználó részletek: Megjelenik a felhasználó neve, e-mail címe, pénze
 [x] `0.5 pont` Felhasználó részletek: Megjelennek a felhasználóhoz tartozó kártyák
